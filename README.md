@@ -3,7 +3,7 @@
 ### Remarks
 * All code can be found in ```advancedLaneLines.py```. It consists of 3 classes [cameraCalibrator,laneline,lanFinder] and the important lines are commented 
 * All imagescreated are in the ./img directory
-* The video for the project submission is the
+* The video for the project submission is called project_video_augmented.mp4
 ## 1 Camera calibration
 To execute camera calibration a class ```cameraCalibrator``` was defined taking in the path of the directory containing the chessboard images as well as the number of inside corners. This class reads all rgb chessboard images, converts them to grayscale and runs opencv's ```findChessboardCorners``` function returning the corners. If the ```findChessboardCorners``` function does not return a positive result the image is simply to a testset used to test the undistort results.
 In total there were 3 Images not processed by the ```findChessboardCorners``` function.
